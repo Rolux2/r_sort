@@ -26,7 +26,7 @@ Funkciók:
 //@Bubble sort
 //https://en.wikipedia.org/wiki/Bubble_sort
 //http://doyle.wcdsb.ca/ICS4MI/notes/notes%20sort%20bubble.htm
-stock bubbleSort(array[],n)
+bubbleSort(array[],n)
 {
 	for(new x=0; x<n; x++)
 	{
@@ -44,7 +44,7 @@ stock bubbleSort(array[],n)
 }
 //@Modified Bubble Sort
 // http://doyle.wcdsb.ca/ICS4MI/notes/notes%20sort%20modified%20bubble.htm
-stock mdbubbleSort(array[],n)
+mdbubbleSort(array[],n)
 {
 	for(new i=0; i<n; i++)
 	{
@@ -67,7 +67,7 @@ stock mdbubbleSort(array[],n)
 //@Selection Sort
 //https://en.wikipedia.org/wiki/Selection_sort
 //http://doyle.wcdsb.ca/ICS4MI/notes/notes%20sort%20selection.htm
-stock selectionSort(array[],n)
+selectionSort(array[],n)
 {
     for(new x=0; x<n; x++)
 	{
@@ -103,7 +103,7 @@ stock insertionSort(array[],n)
 }
 //@Heap Sort
 //https://en.wikipedia.org/wiki/Heapsort
-stock heapSort(array[],n)
+heapSort(array[],n)
 {
     for (new i = n / 2 - 1; i >= 0; i--)
         heapify(array, n, i);
@@ -117,7 +117,7 @@ stock heapSort(array[],n)
     }
 }
 
-stock heapify(array[],n,i)
+heapify(array[],n,i)
 {
    	new largest = i;
     new l = 2*i + 1;  
@@ -140,7 +140,7 @@ stock heapify(array[],n,i)
 
 //@Merge Sort
 //https://en.wikipedia.org/wiki/Merge_sort
-stock mergeSort(array[],min, max)
+mergeSort(array[],min, max)
 {
 	if (min < max)
 	{
@@ -151,7 +151,7 @@ stock mergeSort(array[],min, max)
 		merge(array, min, max, mid) ;
 	}
 }
-stock merge(array[],min,max,mid)
+merge(array[],min,max,mid)
 {
 	new firstIndex = min ;
 	new secondIndex = mid + 1 ;
