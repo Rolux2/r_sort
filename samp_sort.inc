@@ -1,6 +1,6 @@
 /*
 Készítő:
-	rolux  
+	Novák Gábor  
 
 Rendezési algoritmusok
 
